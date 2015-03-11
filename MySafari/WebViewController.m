@@ -23,18 +23,32 @@
 
 }
 
--(BOOL)textFieldShouldReturn:(UITextField *)textField{
+
+
+#pragma mark - UIWebDelegate Protocols
+
+-(void)webViewDidStartLoad:(UIWebView *)webView {
+
+}
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView{
+
+
+}
+
+#pragma mark - UIWTextFieldDelegate Protocols
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
 
     NSURL *url = [NSURL URLWithString:textField.text];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    
+
     [self.webView loadRequest:request];
 
     return true;
 
-    
-
 }
+
 
 
 
