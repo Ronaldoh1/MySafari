@@ -36,7 +36,6 @@
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:true];
 
-
     
 }
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
@@ -46,7 +45,7 @@
          self.urlTextField.alpha = 0.0;
     } else if (scrollView.contentOffset.y <= 0.0) {
 
-        
+
         self.urlTextField.alpha = 1.0;
     }
 }
@@ -80,6 +79,9 @@
         self.forwardButton.alpha = 0.1;
     }
 
+    self.urlTextField.text = [self.webView stringByEvaluatingJavaScriptFromString:@"window.location.href"];
+    self.navigationItem.title = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+    
 
 }
 
