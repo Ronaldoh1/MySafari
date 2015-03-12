@@ -8,13 +8,14 @@
 
 #import "WebViewController.h"
 
-@interface WebViewController () <UIWebViewDelegate, UITextFieldDelegate, UIAlertViewDelegate>
+@interface WebViewController () <UIWebViewDelegate, UITextFieldDelegate, UIAlertViewDelegate, UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *urlTextField;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
 @property (weak, nonatomic) IBOutlet UIButton *forwardButton;
-
+@property (nonatomic) BOOL didScrollToBottom;
+@property (nonatomic) BOOL didScrollToTop;
 @end
 
 @implementation WebViewController
@@ -27,14 +28,28 @@
     self.forwardButton.alpha = 0.1;
     self.webView.scrollView.userInteractionEnabled = false;
 
+    self.webView.scrollView.delegate = self;
+
+
 }
 
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:true];
 
+
     
 }
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if(scrollView.contentOffset.y >= (scrollView.contentSize.height - scrollView.frame.size
+                                      .height)){
 
+         self.urlTextField.alpha = 0.0;
+    } else if (scrollView.contentOffset.y <= 0.0) {
+
+        
+        self.urlTextField.alpha = 1.0;
+    }
+}
 #pragma mark - UIWebDelegate Protocols
 
 -(void)webViewDidStartLoad:(UIWebView *)webView {
