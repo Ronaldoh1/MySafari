@@ -11,10 +11,11 @@
 		F20B8CE91AB0ED8F006CF71B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F20B8CE81AB0ED8F006CF71B /* AppDelegate.m */; };
 		F20B8CEC1AB0ED8F006CF71B /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F20B8CEB1AB0ED8F006CF71B /* WebViewController.m */; };
 		F20B8CEF1AB0ED8F006CF71B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20B8CED1AB0ED8F006CF71B /* Main.storyboard */; };
-		F20B8CF11AB0ED8F006CF71B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20B8CF01AB0ED8F006CF71B /* Images.xcassets */; };
 		F20B8CF41AB0ED8F006CF71B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F20B8CF21AB0ED8F006CF71B /* LaunchScreen.xib */; };
 		F20B8D001AB0ED8F006CF71B /* MySafariTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F20B8CFF1AB0ED8F006CF71B /* MySafariTests.m */; };
 		F20B8D0D1AB1EC27006CF71B /* blueStar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F20B8D0C1AB1EC27006CF71B /* blueStar.jpg */; };
+		F2F99BA81AB36F32007C8F1E /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2F99BA71AB36F32007C8F1E /* images.xcassets */; };
+		F2F99BAA1AB36F85007C8F1E /* iconSafariImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F99BA91AB36F85007C8F1E /* iconSafariImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +37,13 @@
 		F20B8CEA1AB0ED8F006CF71B /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		F20B8CEB1AB0ED8F006CF71B /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		F20B8CEE1AB0ED8F006CF71B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F20B8CF01AB0ED8F006CF71B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F20B8CF31AB0ED8F006CF71B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F20B8CF91AB0ED8F006CF71B /* MySafariTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySafariTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20B8CFE1AB0ED8F006CF71B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F20B8CFF1AB0ED8F006CF71B /* MySafariTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySafariTests.m; sourceTree = "<group>"; };
 		F20B8D0C1AB1EC27006CF71B /* blueStar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blueStar.jpg; sourceTree = "<group>"; };
+		F2F99BA71AB36F32007C8F1E /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = ../images.xcassets; sourceTree = "<group>"; };
+		F2F99BA91AB36F85007C8F1E /* iconSafariImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconSafariImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +91,8 @@
 				F20B8CEB1AB0ED8F006CF71B /* WebViewController.m */,
 				F20B8CED1AB0ED8F006CF71B /* Main.storyboard */,
 				F20B8D0C1AB1EC27006CF71B /* blueStar.jpg */,
-				F20B8CF01AB0ED8F006CF71B /* Images.xcassets */,
+				F2F99BA71AB36F32007C8F1E /* images.xcassets */,
+				F2F99BA91AB36F85007C8F1E /* iconSafariImage.png */,
 				F20B8CF21AB0ED8F006CF71B /* LaunchScreen.xib */,
 				F20B8CE31AB0ED8F006CF71B /* Supporting Files */,
 			);
@@ -203,9 +206,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F20B8CEF1AB0ED8F006CF71B /* Main.storyboard in Resources */,
+				F2F99BA81AB36F32007C8F1E /* images.xcassets in Resources */,
+				F2F99BAA1AB36F85007C8F1E /* iconSafariImage.png in Resources */,
 				F20B8D0D1AB1EC27006CF71B /* blueStar.jpg in Resources */,
 				F20B8CF41AB0ED8F006CF71B /* LaunchScreen.xib in Resources */,
-				F20B8CF11AB0ED8F006CF71B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MySafari/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MySafari/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
