@@ -14,6 +14,7 @@
 		F20B8CF11AB0ED8F006CF71B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20B8CF01AB0ED8F006CF71B /* Images.xcassets */; };
 		F20B8CF41AB0ED8F006CF71B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F20B8CF21AB0ED8F006CF71B /* LaunchScreen.xib */; };
 		F20B8D001AB0ED8F006CF71B /* MySafariTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F20B8CFF1AB0ED8F006CF71B /* MySafariTests.m */; };
+		F20B8D0D1AB1EC27006CF71B /* blueStar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F20B8D0C1AB1EC27006CF71B /* blueStar.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		F20B8CF91AB0ED8F006CF71B /* MySafariTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySafariTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20B8CFE1AB0ED8F006CF71B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F20B8CFF1AB0ED8F006CF71B /* MySafariTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySafariTests.m; sourceTree = "<group>"; };
+		F20B8D0C1AB1EC27006CF71B /* blueStar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blueStar.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				F20B8CEA1AB0ED8F006CF71B /* WebViewController.h */,
 				F20B8CEB1AB0ED8F006CF71B /* WebViewController.m */,
 				F20B8CED1AB0ED8F006CF71B /* Main.storyboard */,
+				F20B8D0C1AB1EC27006CF71B /* blueStar.jpg */,
 				F20B8CF01AB0ED8F006CF71B /* Images.xcassets */,
 				F20B8CF21AB0ED8F006CF71B /* LaunchScreen.xib */,
 				F20B8CE31AB0ED8F006CF71B /* Supporting Files */,
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F20B8CEF1AB0ED8F006CF71B /* Main.storyboard in Resources */,
+				F20B8D0D1AB1EC27006CF71B /* blueStar.jpg in Resources */,
 				F20B8CF41AB0ED8F006CF71B /* LaunchScreen.xib in Resources */,
 				F20B8CF11AB0ED8F006CF71B /* Images.xcassets in Resources */,
 			);
@@ -412,6 +416,7 @@
 				F20B8D051AB0ED8F006CF71B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F20B8D061AB0ED8F006CF71B /* Build configuration list for PBXNativeTarget "MySafariTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +425,7 @@
 				F20B8D081AB0ED8F006CF71B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
